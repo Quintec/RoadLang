@@ -25,6 +25,10 @@ local.properties
 
 # CDT- autotools
 .autotools
+.classpath
+.DS_Store
+.project
+src/.DS_Store
 
 # Java annotation processor (APT)
 .factorypath
