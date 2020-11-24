@@ -2,17 +2,19 @@ public class Tokenizer
 {
     private String text;
     private int index;  //index of char to process next
+    private boolean stringMode;
 
     public Tokenizer(String text)
     {
         this.text = text;
         index = 0;
+        stringMode = false;
     }
 
     public String next()
     {
         skipWhitespace();
-
+        
         if (index == text.length())
             return "";  //indicates end of program
 
@@ -22,7 +24,7 @@ public class Tokenizer
         {
             //consists of a-z, A-Z, 0 - 9, or _.
             //this code assumes any string of such characters is a single token.
-            while (index < text.length() && isAlphaNum(text.charAt(index)))
+            while (index < text.length() && (isAlphaNum(text.charAt(index)) || (stringMode && text.charAt(index) != '"')))
             {
                 token += text.charAt(index);
                 index++;
@@ -32,6 +34,8 @@ public class Tokenizer
         {
             //not alphanumeric.  therefore, this symbol is assumed to be a one character token.
             token += text.charAt(index);
+            if (text.charAt(index) == '"')
+            	stringMode = !stringMode;
             index++;
         }
 
