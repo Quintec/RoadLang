@@ -49,8 +49,8 @@ Double quotes (for strings) and parentheses (for expressions) work as normal.
 
 | Template                                                     | Type         | Usage                                                        |
 | ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ |
-| rip dat bong till [expression] n dat<br />&nbsp;&nbsp;&nbsp;&nbsp;[statements]<br />mmm | while loop   | Executes [statements] as long as [expression] is true.       |
-| ayy bossman [expression] init bruv<br />&nbsp;&nbsp;&nbsp;&nbsp;[statements]<br />yeah init bruv<br />&nbsp;&nbsp;&nbsp;&nbsp;[optional statements]<br />yeah | if statement | Executes [statements] if [expression] is true. Otherwise, executes [optional statements] if they exist. (Note that you still need the second `yeah` even if the else block doesn't exist.) |
-| pass me [variable name] from asda lad                        | input        | Sets the value of [variable name] to the next line of input from stdin. |
+| <pre>rip dat bong till [expression] n dat<br />&nbsp;&nbsp;&nbsp;&nbsp;[statements]<br />mmm </pre>| while loop   | Executes [statements] as long as [expression] is true.       |
+| <pre>ayy bossman [expression] init bruv<br />&nbsp;&nbsp;&nbsp;&nbsp;[statements]<br />yeah init bruv<br />&nbsp;&nbsp;&nbsp;&nbsp;[optional statements]<br />yeah | if statement </pre>| Executes [statements] if [expression] is true. Otherwise, executes [optional statements] if they exist. (Note that you still need the second `yeah` even if the else block doesn't exist.) |
+| <pre>pass me [variable name] from asda lad            </pre>            | input        | Sets the value of [variable name] to the next line of input from stdin. |
 
 
