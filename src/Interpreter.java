@@ -65,7 +65,7 @@ public class Interpreter
 		prog = prog.trim();
 		
 		Object program = p.parse(prog);
-		System.out.println(program);
+		//System.out.println(program);
 		eval(program, s);
 	}
 
